@@ -1,0 +1,14 @@
+comment compiler et executer le programme en assembleur
+
+nasm -f elf64 file.s -o file.o
+
+ld file.o -o exe
+
+./exec
+
+nasm -f elf64 file.s -o file.o && ld file.o && ./a.out
+
+
+pour regarder dans un fichier .a on peux utiliser la commande nm
+
+nm file.a | grep "fct"
