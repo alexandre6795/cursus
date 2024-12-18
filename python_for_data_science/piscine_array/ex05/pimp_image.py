@@ -74,12 +74,14 @@ def ft_grey(array) -> np.array:
     result[:, :, 0] = grey
     result[:, :, 1] = grey
     result[:, :, 2] = grey
-    # grey = (0.2126 * array[:, :, 0] +
-    #         0.7152 * array[:, :, 1] +
-    #         0.0722 * array[:, :, 2])
+    # grey = (array[:, :, 0] / (1 / 0.2126) +
+    #     array[:, :, 1] / (1 / 0.7152) +
+    #     array[:, :, 2] / (1 / 0.0722))
+
     # result[:, :, 0] = grey
     # result[:, :, 1] = grey
     # result[:, :, 2] = grey
+
     plt.imshow(result)
     plt.title("Grey")
     plt.show()

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV=/home/aherrman/Desktop/ppython/env
+VIRTUAL_ENV=/home/aherrman/Desktop/cursus/python_for_data_science/env
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
